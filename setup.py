@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 setup(
      name = 'dsssSnowflakeOEberson'
-    # #version = VERSION,
+     version = 0.1.1,
     # description = 'DSSS homework - draws random colored snowflakes',
     # url = 'https://github.com/OEberson/dsssSnowflake',
     # license = 'Apache License',
