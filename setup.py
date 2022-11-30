@@ -7,6 +7,6 @@ setup(
     url='https://github.com/OEberson/dsssSnowflake',
     license='Apache License Version 2.0',
     packages='dsssSnowflake',
-    install_requires=['numpy','turtle'],
-    
+    install_requires=['numpy','turtle']
+
 )
