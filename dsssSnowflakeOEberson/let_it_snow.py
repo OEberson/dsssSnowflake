@@ -16,8 +16,6 @@ def snowflake_branch(size, myTurtle):
     myTurtle.forward(size)
 
 
-if __name__ == "__main__":
-    main()
 
 def main(speed=0, bg_color="white"):
     # create Turtle object
@@ -51,3 +49,7 @@ def main(speed=0, bg_color="white"):
         for _ in range(8):
             snowflake_branch(size, myTurtle)
             myTurtle.left(45)
+
+
+if __name__ == "__main__":
+    main()
