@@ -2,7 +2,7 @@ import turtle
 import numpy as np
 
 
-def main(speed=0, bg_color="grey"):
+def main(speed=0, bg_color="white"):
     # create Turtle object
     turtle_screen = turtle.Screen()
     myTurtle = turtle.Turtle()
@@ -13,7 +13,8 @@ def main(speed=0, bg_color="grey"):
     turtle_screen.bgcolor(bg_color)
   
  
-    """TODO: define different colors here"""
+    #colors array with dark red, dark green and gold
+    colors=['#B00000','#005F10','#FFD700']
 
 
     for _ in range(10):
@@ -21,12 +22,14 @@ def main(speed=0, bg_color="grey"):
         size = 18
         pos = [np.random.randint(-300, 300), np.random.randint(-300, 300)]
 
-        """TODO: set snowflake color here (one of the colors defined above)"""
+        #randomly setting color
+        myTurtle.color(colors[np.random.randint(0,3)])
 
         # Go to the start position of the snowflake
         myTurtle.penup()
         myTurtle.goto(pos[0], pos[1])
         myTurtle.pendown()
+    
 
         # draw the snowflake
         for _ in range(8):
