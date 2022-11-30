@@ -22,13 +22,12 @@ def main(speed=0, bg_color="white"):
         size = 18
         pos = [np.random.randint(-300, 300), np.random.randint(-300, 300)]
 
-        #randomly setting color
-        myTurtle.color(colors[np.random.randint(0,3)])
-
         # Go to the start position of the snowflake
         myTurtle.penup()
         myTurtle.goto(pos[0], pos[1])
         myTurtle.pendown()
+        #randomly setting color
+        myTurtle.color(colors[np.random.randint(0,3)])
     
 
         # draw the snowflake
